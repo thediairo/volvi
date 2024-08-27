@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+    *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+#layout{
+    margin: auto;
+    display: block;;
+    width: 800px;
+    height: 400px;
+    background: rgb(81, 207, 252);
+    border: 3px solid black;
+}
+#nube1{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    border-radius: 100%;
+    background: white;
+    z-index: 1;
+}
+#nube11{
+    width: 80px;
+    height: 60px;
+    position: relative;
+    top: -5px;
+    left: 0px;
+    border-radius: 100%;
+    background: white;
+    z-index: 1;
+}
+
+#nube12{
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    top: -15px;
+    left: 40px;
+    border-radius: 100%;
+    background: white;
+    z-index: 1;
+}
+#nube13{
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    top: -5px;
+    left: 120px;
+    border-radius: 100%;
+    background: white;
+    z-index: 1;
+}
+
+#nube2{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top: 0px;
+    left: 350px;
+    border-radius: 100%;
+    background: white;
+    z-index: 1;
+}
+#nube21{
+    width: 80px;
+    height: 60px;
+    position: relative;
+    top: -5px;
+    left: 0px;
+    border-radius: 100%;
+    background: white;
+    z-index: 1;
+}
+
+#nube22{
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    top: -15px;
+    left: 40px;
+    border-radius: 100%;
+    background: white;
+    z-index: 1;
+}
+#nube23{
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    top: -5px;
+    left: 120px;
+    border-radius: 100%;
+    background: white;
+    z-index: 1;
+}
+#piso{
+    display: block;
+    width: 800px;
+    height: 30px;
+    background:green;
+    position: relative;
+    top:270px;
+}
+#arbol1{
+    display: block;
+    width: 80px;
+    height: 140px;
+    position: relative;
+    left: 70px;
+    top: 55px;
+}
+#arbol2{
+    display: block;
+    width: 80px;
+    height: 140px;
+    position: relative;
+    left: 670px;
+    top: -85px;
+}
+#tallo{
+    display: block;
+    width: 40px;
+    height: 140px;
+    position: relative;
+    z-index: 0;
+    left: 20px;
+    top: -5px;
+    background: maroon;
+}
+#copa{
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    z-index: 1;
+    border-radius: 100%;
+    background: green;
+
+}
+#casa{
+    display: block;
+    width: 400px;
+    height: 200px;
+    background: black;
+    position: relative;
+    left: 210px;
+    top: -240px;
+}
+#puerta{
+    width: 80px;
+    height: 130px;
+    background: chocolate;
+    position: relative;
+    left: 10px;
+    top: 70px;
+}
+#ventana{
+    width: 80px;
+    height: 80px;
+    background: blue;
+    position: relative;
+    left: 300px;
+    top: -100px;
+}
+#techo{
+    display: block;
+    width: 600px;
+    height: 40px;
+    background: white;
+    position: relative;
+    left: 120px;
+    top: -480px;
+}
+#persona{
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 10px;
+    top: -400px;
+    border-radius: 100%;
+    background: black;
+}
+#cuerpo{
+    display: block;
+    width: 10px;
+    height: 40px;
+    background: black;
+    position: relative;
+    left: 30px;
+    top: -400px;
+}
+#pier{
+    display: block;
+    width: 10px;
+    height: 40px;
+    background: black;
+    position: relative;
+    left: 10px;
+    top: -410px;
+    rotate: 60deg;
+}
+#pier2{
+    display: block;
+    width: 10px;
+    height: 40px;
+    background: black;
+    position: relative;
+    left: 50px;
+    top: -450px;
+    rotate: 120deg;
+}
+#bra1{
+    display: block;
+    width: 10px;
+    height: 40px;
+    background: black;
+    position: relative;
+    left: 10px;
+    top: -530px;
+    rotate: 90deg;
+}
+#bra2{
+    display: block;
+    width: 10px;
+    height: 40px;
+    background: black;
+    position: relative;
+    left: 50px;
+    top: -570px;
+    rotate: 90deg;
+}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<body>
+    <div style=" width: 100%; height: 96.1%; position: absolute; top: 50px;" id="prin">
+        <div id="cc1" style="position: absolute; visibility: collapse;">La historia completa de HTML, aunque reciente es, además de extensa, francamente
+            interesante, y debido a esa extensión, es por lo que, a continuación, se muestra un
+            resumen de la misma. El origen de HTML se remonta a 1980, cuando el físico Tim
+            Berners-Lee, trabajador del CERN (http://www.cern.ch/) (Organización Europea para la
+            Investigación Nuclear) propuso un nuevo sistema de "hipertexto" para compartir
+            documentos.
+            Los sistemas de "hipertexto" habían sido desarrollados algunos años antes con la
+            finalidad de permitir a los usuarios acceder a la información relacionada con los
+            documentos electrónicos que estaban visualizando, conviertiéndose, sin ellos esperarlo,
+            en los “precursores” de los enlaces de las páginas web actuales.
+            Tim Berners-Lee presentó su sistema de “hipertexto”, una vez finalizado y depurado, a
+            una convocatoria organizada para desarrollar un sistema de "hipertexto" para Internet
+            (que nada tenía que ver con la Internet que conocemos hoy). Después de trabajar junto al
+            ingeniero de sistemas Robert Cailliau sobre su proyecto inicial, ambos, crearon una
+            propuesta conocida como WorldWideWeb o W3, que como habrán podido comprobar,
+            fué la que gano el concurso.
+            El primer documento formal con la descripción de HTML se publicó en 1991 bajo el
+            nombre "HTML Tags" (Etiquetas de HTML) y aún se puede consultar, como histórico, en:
+            (http://www.w3.org/History/19921103-hypertext/hypertext/WWW/MarkUp/Tags.html)
+            HTML – Historia y Características Generales
+            Página 3
+            La primera propuesta oficial para convertir HTML en un estándar se realizó en 1993 por
+            parte de la IETF (http://www.ietf.org/) (Internet Engineering Task Force). Aunque se
+            consiguieron avances significativos, definiéndose las etiquetas para imágenes, tablas y
+            formularios, ninguna de las dos propuestas realizadas como “estándar” (las llamadas
+            HTML y HTML+), consiguieron convertirse de forma oficial en un estándar.
+            Dos años después (1995), el mismo IETF organiza un grupo de trabajo de HTML, tras el
+            cual, consigue publicar, en septiembre de dicho año, el estándar conocido como HTML
+            2.0, siendo, a pesar de su versión 2.0, el primer estándar oficial del “lenguaje” HTML.
+            A partir de 1996, es el W3C, acrónimo de World Wide Web Consortium, el que publica los
+            estándares de HTML. La versión HTML 3.2 se publicó en Enero de 1997 y es la primera
+            recomendación ofical de HTML publicada por dicha organización. Esta revisión ya
+            recogen e incorpora los últimos avances utilizados en el diseño de las páginas web
+            hasta ese año, de entre los que podemos destacar los applets de Java y la posibilidad de
+            textos “enmarcados” y que se disponen “alrededor” de las imágenes.
+            Con la publicación del estándar HTML 4.0 en Abril de 1998 (versión corregida y ampliada
+            de la publicada originalmente en Diciembre de 1997), se produce un gran avance en
+            relación a versiones anteriores. Alguna de las novedades más relevantes de esta
+            versión, es la incorporación, por primera vez, de las “hojas de estilos CSS”, así como la
+            posibilidad de incluir pequeños programas o scripts en el diseño de las páginas web.
+            Una significativa mejora en la accesibilidad de las páginas diseñadas, la posibilidad de
+            elaborar tablas complejas e importantes mejoras en la confección y uso de formularios,
+            son además, algunas de sus otras aportaciones.
+            Se publica en diciembre de 1999 el penúltimo “estándar oficial” de HTML conocido como
+            la versión 4.01, revisión y actualización de la versión anterior que no llega a aportar
+            novedades significativas.
+            Desde la publicación de HTML 4.01, la actividad de estandarización de HTML se detuvo
+            por parte del W3C, que se centró en el desarrollo de un nuevo estándar, el XHTML.
+            Debido a ello, y en el año 2004, las empresas Apple, la Fundación Mozilla y Opera,
+            mostraron su preocupación por la falta de interés del W3C en el estámdar HTML y
+            decidieron crear una nueva asociación llamada WHATWG , en las que las tres entidades
+            estaban representadas. El acróniomo se corresponde a Web Hypertext Application
+            Technology Working Group, y su página en la red es http://www.whatwg.org/.
+            La actividad del WHATWG se centró desde su inicio en el desarrollo del estándar HTML
+            5.0, y cuyo primer borrador oficial se publica en enero de 2008.
+            Debido a la fuerza de las empresas que forman el grupo WHATWG y a la publicación de
+            un primer borrador de la versión 5.0, en marzo de 2007, el Consorcio W3C decidió
+            retomar la actividad estandarizadora de HTML, publicándose hace poco tiempo este
+            estándar. (http://www.w3.org/TR/html5/)
+            Además, W3C ha continuado con la estandarización de XHTML, una versión avanzada
+            de HTML y basada en XML. La primera versión de XHTML se denominó 1.0 y fué
+            publicada en enero de 2000, con posterior revisión en agosto de 2002. XHTML nace
+            como una adaptación específica al lenguaje XML del estándar HTML 4.01, mantieniendo
+            casi todas sus “etiquetas” y características, a las que añade algunas propias de XML.
+            XHTML y HTML se desarrollan en la actualidad de forma conjunta en el seno del W3C. 
+        <br><br>
+        <img src="data:image/jpeg;base64,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" alt="">
+        </div>
+        <div id="cc2" style="position: absolute; visibility: collapse;"><h1>Etiquetas basicas de html</h1>
+        <p>Para titulos y subtitulos se ocupa "h" desde el 1 hasta el 6, mientras mayor el número mas pequeña la letra </p>
+        <h1>Hola</h1>
+        <h2>Hola</h2>
+        <h3>Hola</h3>
+        <h4>Hola</h4>
+        <h5>Hola</h5>
+        <h6>Hola</h6>
+        <p>La etiqueta "p" se utilaza para hacer parrafos como este</p>
+        <b>La etiqueta "b" es para hacer negritas</b>
+        <br><br><p>La etiqueta "br" es para saltos de linea</p>
+        <p>Html:5 nos dara la estructura basica de un documento</p>
+        <i>"i" es para cursivas </i><br>
+        <u>"u" es para texto subrayado</u><br>
+        <s>"s" es para texto tachado </s>
+        <center>"center" centrara el texto</center>
+        <p>"link" nos permitira agregar archivos css</p>
+        <p>"script" nos permite agregar archivos js o escribir lenguaje js desde el mismo documento</p>
+        </div>
+        <div id="cc3" style="position: absolute;  visibility: collapse;">
+            
+            <h1>TEXTO EXPLICACION</h1>
+            <p>Conceptos básicos: Encabezados y párrafos
+                La mayor parte del texto estructurado está compuesto por encabezados y párrafos, independientemente de si lees una historia, un periódico, un libro de texto, una revista, etc.</p>
+            <p>Hay seis elementos de encabezado: h1, h2, h3, h4, h5 y h6. Cada elemento representa un nivel de contenido diferente en el documento;
+                <br> h1 representa el título principal,<br> h2 representa el subtítulo,<br> h3 representa el subtítulo del subtítulo, y así sucesivamente.</p>
+                <br><br>
+                <p>Para escribir un parrafo sencillo ocupamos p</p>
+                <img src="https://darwinrobles.com/wp-content/uploads/2019/02/html5-ejemplos.jpg" alt="">
+            </div>
+        
+        
+            <div id="cc4" style="position: absolute; visibility: collapse;"><h1>Listas</h1>
+        <p>Se ocupan para hacer listados, se empizan por "ol" o "ul", y adentro "li", tambien hay diferentes tipos</p>
+        <ul>
+            <li>Hola1</li>
+            <li>Hola2</li>
+        </ul>
+        <ol type="1">
+            <li>Hola</li>
+            <li>Hola</li>
+        </ol>
+        <ol type="a">
+            <li>Hola</li>
+            <li>Hola</li>
+        </ol>
+        <ol type="i">
+            <li>Hola</li>
+            <li>Hola</li>
+        </ol>
+        <img src="https://i.ytimg.com/vi/yhvfA40ukfQ/maxresdefault.jpg" alt="">
+        </div>
+        <div id="cc5" style="position: absolute; visibility: collapse;"><h1>Tablas</h1>
+        <p>Pos para hacer tablas, se ocupa la etiqueta "table", "tr" y "td" para las filas y columnas, ya si eres pro tambien ocupas "tbody", thead es para la cabeza, inglis papá</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Especificación</th>
+                    <th>Smartphone A</th>
+                    <th>Smartphone B</th>
+                    <th>Smartphone C</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Procesador</td>
+                    <td>Snapdragon 888</td>
+                    <td>Exynos 2100</td>
+                    <td>Apple A15 Bionic</td>
+                </tr>
+                <tr>
+                    <td>RAM</td>
+                    <td>8 GB</td>
+                    <td>12 GB</td>
+                    <td>6 GB</td>
+                </tr>
+                <tr>
+                    <td>Almacenamiento</td>
+                    <td>128 GB</td>
+                    <td>256 GB</td>
+                    <td>128 GB</td>
+                </tr>
+                <tr>
+                    <td>Pantalla</td>
+                    <td>6.7" AMOLED</td>
+                    <td>6.8" AMOLED</td>
+                    <td>6.1" Super Retina XDR</td>
+                </tr>
+                <tr>
+                    <td>Batería</td>
+                    <td>4500 mAh</td>
+                    <td>5000 mAh</td>
+                    <td>3095 mAh</td>
+                </tr>
+                <tr>
+                    <td>Cámara Principal</td>
+                    <td>108 MP + 12 MP</td>
+                    <td>64 MP + 12 MP</td>
+                    <td>12 MP + 12 MP</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="https://www.apinem.com/wp-content/uploads/2024/04/tabla-html-sintaxis-ejemplo.png" alt="">
+        </div>
+
+        <div id="cc6" style="position: absolute; visibility: collapse;"><h1>Imagenes</h1>
+         <p> Para poner imagenes se ocupa la etiqueta "img", puede ser de manera local o copiando una dirreción web</p>
+         <img src="data:image/jpeg;base64,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">
+        <img src="data:image/jpeg;base64,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" alt="">
+        <hr>
+        <p>Estas iamgenes tienen 3 principales atributos el src: que es la ruta de la imagen, height y width que es para las dimensiones</p>
+    </div>
+        <div id="cc7" style="position: absolute; visibility: collapse;"><h1>Videos</h1>
+        <p>Lo mismo que las imagen pero con video, solo que aqui podemos poner controles o algunos atributos</p>
+        <video src="extras/Edit2.mp4" controls width="500px" height="500px"></video>
+        <img src="data:image/jpeg;base64,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" alt="">
+        <p>Los videos tienen las mismas propiedades de la imagen, mas algunas otras como: controls que nos ayudara a poner controles. Tambien podemos hacer que el video se reproduzca solo y en bucle</p>
+    </div>
+        <div id="cc8" style="position: absolute; visibility: collapse;"><h1>Audio</h1>
+        <p>Sirve para poner un auidio, que mas esperabas?</p>
+        <audio src="extras/11 - Missa Langosta Remake - DNRL (320).mp3" controls></audio>
+        <img src="data:image/jpeg;base64,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" alt="">
+       <p>importante añadir el atributo controls para que funcione bien</p> 
+    </div>
+        <div id="cc9" style="position: absolute; visibility: collapse;"><h1>Hipervinculos</h1>
+        <p>Te sirven para ir a otras paginas dentro de tu sitio o inclusive ir a otros sitios, tambien ir a otras partes dentro de la misma pagina, se pueden personalizar, la etiqueta es "a"</p><br>
+        <a href="https://es.aliexpress.com/w/wholesale-teclado-mecánico.html?spm=a2g0o.home.auto_suggest.1.3ad170e5fTzsxS">aliexpress</a><br>
+        <a href="https://docs.gitlab.com/ee/tutorials/make_first_git_commit/" style="text-decoration: none;">tutoriales de git</a>
+        <img src="data:image/png;base64,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" alt="">
+        </div>
+        <div id="cc10" style="position: absolute; visibility: collapse;"><h1>Formularios</h1>
+        <p>Son los elementos que componen un formulario</p>
+        <form action="index.php" method="get" enctype="text/plain" >
+            <table border="" width="90%" style="margin: auto">
+                <tr>
+                    <td>Nombre</td>
+                    <td>Descripcion</td>
+                    <td>Ejemplo</td>
+                    <td>Sintaxis</td>
+                    
+                </tr>
+                <tr>
+                    <td>1.campo de texto</td>
+                    <td>Recopila información</td>
+                    <td><input type="text"></td>
+                    <td>input type="text"</td>
+                </tr>
+                <tr>
+                    <td>2.Campo contraseña</td>
+                    <td>Oculta los caractere en contraseñas</td>
+                    <td><input type="password" name="" id="" placeholder="Introduce tu contraseña" required ></td>
+                    <td>input type="password" name="" id="" placeholder="Introduce tu contraseña" required </td>
+                </tr>
+                <tr>
+                    <td>3.Casilla de verificación</td>
+                    <td>Sirve para seleccionar una opción</td>
+                    <td><input type="checkbox" name="" id="" checked><input type="checkbox" name="" id=""></td>
+                    <td>input type="checkbox" name="" id="" checked input type="checkbox" name="" id=""</td>
+                </tr>
+                <tr>
+                    <td>4.Boton Radio</td>
+                    <td>Sirve para seleccionar una opción</td>
+                    <td><input type="radio" name="escuela" id="boton1" checked>CECYTEM <br>
+                    <input type="radio" name="escuela" id="boton2" >CBT <br>
+                    <input type="radio" name="escuela" id="boton3" >CONALEP</td> <br>
+                    <td>input type="radio" name="escuela" id="boton1" checked>CECYTEM <br>
+                        input type="radio" name="escuela" id="boton2" >CBT <br>
+                        input type="radio" name="escuela" id="boton3" >CONALEP</td>
+                </tr>
+                <tr>
+                    <td>5.CAMPO OCULTO</td>
+                    <td>Para ocultar información</td>
+                    <td><input type="hidden" name="oculto" id="oculto" value="Mi conraseña es: 123456"></td>
+                <td>input type="hidden" name="oculto" id="oculto" value="Mi conraseña es: 123456"</td>
+                </tr>
+                <tr>
+                    <td>6.Area de texto</td>
+                    <td>Area en donde escribir</td>
+                    <td><textarea name="texto" id="texto" cols="30" rows="10" ></textarea></td>
+                <td>textarea name="texto" id="texto" cols="30" rows="10" >/textarea</td>
+                </tr>
+                <tr>
+                    <td>7.Lista desplegable</td>
+                    <td></td>
+                    <td><select name="lista" id="lista">
+                        <option value="SAUL">SAUL</option>
+                        <option value="Jose">Jose</option>
+                        <option value="Bruno">Bruno</option>
+                        <option value="Lael">Lael</option>
+                        <option value="Menorcito">Menorcito</option>
+                    </select></td>
+                    <td>select name="lista" id="lista">
+                        option value="SAUL">SAUL/option> <br>
+                        option value="Jose">Jose/option> <br>
+                        option value="Bruno">Bruno/option> <br>
+                        option value="Lael">Lael/option> <br>
+                        option value="Menorcito">Menorcito/option> <br>
+                    /select</td>
+                </tr>
+                <tr>
+                    <td>8.Boton enviar</td>
+                    <td>Boton mas importante</td>
+                    <td><input type="submit"></td>
+                <td>input type="submit"</td>
+                </tr>
+                <tr>
+                    <td>9.Boton de regresar</td>
+                    <td>Restablece todo lo del fórmula</td>
+                    <td><input type="reset"></td>
+                    <td>input type="reset"</td>
+                </tr>
+    
+                <tr>
+                    <td>11 Boton de imagen</td>
+                    <td>Es una imagen pero en realidad es un boton  </td>
+                    <td><input type="image" src="mortal.jpeg"></td>
+                <td>input type="image" src="mortal.jpeg"</td>
+                </tr>
+                <tr>
+                    <td>12 Boton color</td>
+                    <td>Deja elegir el color por mesio de una paleta de colores</td>
+                    <td><input type="color"></td>
+                <td>input type="color"</td>
+                </tr>
+                <tr>
+                    <td>13. Boton comando</td>
+                    <td>Boton estandar </td>
+                    <td><input type="button" value="ACEPTAR"></td>
+                <td>input type="button" value="ACEPTAR"</td>
+                </tr>
+                <tr>
+                    <td>14. Campo fecha</td>
+                    <td>Permite poner la fecha por dia mes y año </td>
+                    <td><input type="date" name="" id=""></td>
+                <td>input type="date" name="" id=""</td>
+                </tr>
+                <tr>
+                    <td>15. Fecha y hora</td>
+                    <td>Permite poner la fecha y la hora juntos</td>
+                    <td><input type="datetime" name="" id=""></td>
+                <td>input type="datetime" name="" id=""</td>
+                </tr>
+                <tr>
+                    <td>16. Fecha y hora local</td>
+                    <td>O ne la hora y fecha del lugar actual en donde estas</td>
+                    <td><input type="datetime-local" name="" id=""></td>
+                <td>input type="datetime-local" name="" id=""</td>
+                </tr>
+                <tr>
+                    <td>17. campo email</td>
+                    <td>nos permite poner el email y no falten elementos</td>
+                    <td><input type="email" name="" id=""></td>
+                <td>input type="email" name="" id=""</td>
+                </tr>
+                <tr>
+                    <td>18. Campo archivo</td>
+                    <td>Bonton que Permite poner un archivo seleccionado desde la computadora</td>
+                    <td><input type="file" name="" id=""></td>
+                <td>input type="file" name="" id=""</td>
+                </tr>
+                <tr>
+                    <td>19. Mes del año</td>
+                    <td>Permite poner mes y año </td>
+                    <td><input type="month" name="" id=""></td>
+            <td>input type="month" name="" id=""</td>
+                </tr>
+                <tr>
+                    <td>20. CAMPO NUMERICO</td>
+                    <td>Permite poner solo numeros enteros o decimales</td>
+                    <td><input type="number" name="" id="" step="0.5" value="0"></td>
+                <td>input type="number" name="" id="" step="0.5" value="0"</td>
+                </tr>
+                <tr>
+                    <td>21. Campo slider </td>
+                    <td>Es un slider que puede tener distintas funciones</td>
+                    <td><input type="range" name="" id="" value="0" min="0" max="100"></td>
+                <td>input type="range" name="" id="" value="0" min="0" max="100"</td>
+                </tr>
+                <tr>
+                    <td>22. CAMPO BUSQUEDA</td>
+                    <td>Campo para buscar algo dentro de una página (buscador)</td>
+                    <td><input type="search" name="" id=""></td>
+                <td>input type="search" name="" id=""</td>
+                </tr>
+                <tr>
+                    <td>23. CAMPO telefono</td>
+                    <td>Permite solo poner el numero de teléfono</td>
+                    <td><input type="tel" name="" id=""></td>
+                <td>input type="tel" name="" id=""</td>
+                </tr>
+                <tr>
+                    <td>24. campo hora</td>
+                    <td>permite poner la hora actual u hora establecida</td>
+                    <td><input type="time" name="" id=""></td>
+                <td>input type="time" name="" id=""</td>
+                </tr>
+                <tr>
+                    <td>25. URL</td>
+                    <td>Campo para poner una dirección de paginas web (URL)</td>
+                    <td><input type="url" name="" id=""></td>
+                <td>input type="url" name="" id=""</td>
+                </tr>
+                <tr>
+                    <td>26. semana del año</td>
+                    <td>Permite solo poner la semana y el año que desees </td>
+                    <td><input type="week" name="" id=""></td>
+                <td>input type="week" name="" id=""</td>
+                </tr>
+                <tr>
+                    <td>27. Lista oculta</td>
+                    <td>Es una lista que autocompleta lo que sea que estes escribiendo</td>
+                    <td><input list="paises" type="text">
+                    <datalist id="paises">
+                        <option value="mexico"></option>
+                        <option value="españa"></option>
+                        <option value="colombia"></option>
+                    </datalist></td>
+                <td>input list="paises" type="text">
+                    datalist id="paises">
+                        option value="mexico">/option>
+                        option value="españa">/option>
+                        option value="colombia">/option>
+                    /datalist</td>
+                </tr>
+                <tr>
+                    <td>28.PROGRESS</td>
+                    <td>Es una barra de progreso que simula cargar algo</td>
+                    <td><progress id="file" max="100" value="70">70%></progress></td>
+                <td>progress id="file" max="100" value="70">70%>/progress</td>
+                </tr>
+                <tr>
+                    <td>29. ESTETICO</td>
+                    <td>Es un borde y orden que se le pone a un formulario</td>
+                    <td><fieldset>
+                        <legend>DATOS PERSONALES</legend>
+                        Nombre <br>
+                        <input type="text"> <br>
+                        Contraseña <br>
+                        <input type="password" name="" id=""> <br>
+                        Fecha de nacimiento <br>
+                        <input type="date" name="" id="">
+                    </fieldset></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+    
+        </div>
+        <div id="cc11" style="position: absolute; visibility: collapse;"><h1>Etiquetas de orden</h1>
+        <p>Son etiquetas que no se ven visualmente reflejadas siempre, aqui encontramos etiquetas como footer, hgroup, div, article y otras mas, la verdad yo no las utilizo (solo el div) pero pues dicen por ahi que un buen programador las utiliza. No se total, ya mejor voy a ser licenciado</p>
+        <p>header: la etiqueta de encabezamiento define el contenido introductorio de una página o sección.
+            <br>nav: la etiqueta de navegación se utiliza para los enlaces de navegación. Puede anidarse dentro de la etiqueta header, pero las etiquetas nav de navegación secundaria también suelen usarse en otras secciones de la página.
+            <br>main: esta etiqueta contiene el contenido principal (también llamado cuerpo) de una página. Solo debería haber una etiqueta main por página.
+            <br>article: la etiqueta artículo define el contenido independiente de la página o web en la que se encuentra. No significa necesariamente una "entrada del blog". Piensa en ella más bien como "una prenda de vestir": una etiqueta independiente que puede emplearse en varios contextos.
+           <br> section: utilizar section es una forma de agrupar contenidos que tratan sobre temas similares. Las etiquetas de sección son diferentes a las de artículo, no son necesariamente autónomas, sino que forman parte de algo más. 
+            <br>aside: un elemento "aside" define el contenido de menor importancia. Suele emplearse para las barras laterales, que incluyen información complementaria pero no esencial.
+            <br>footer: usa footer  en la parte inferior de una página. La etiqueta suele incluir información de contacto, derechos de autor y navegación por la web.</p>
+            <img src="data:image/jpeg;base64,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" alt="">
+    </div> 
+        <div id="cc12" style="position: absolute; visibility: collapse;"><h1>Frames</h1>
+        <p>La ver no se definir bien lo que es esto, entonces, preguntemosle a mi papi chat gpt, Los frames en HTML se utilizan para dividir una ventana del navegador en varias secciones independientes, cada una de las cuales puede mostrar un documento HTML diferente. Esta técnica fue bastante popular en versiones anteriores de HTML, especialmente con el uso de frameset, pero ha sido en gran medida reemplazada por técnicas más modernas como el uso de CSS para diseño de layouts y el uso de iframes para incrustar contenido.</p><br>
+        <p>AAAAAAA era eso, creo que me habria funcionado el anterior semestre, diablos, bueno, vamos con un ejemplo del googleee <br> <b>ok? parece que esto es algo OBSOLETO, a ver que puedo hacer</b></p>
+        
+        <iframe src="https://extraordinary-moonbeam-90ef85.netlify.app" width="600" height="400" style="border:none;">
+        </iframe>
+        <b>Ya me salio :) era con iframe</b>
+        </div>
+        <div id="cc13" style="position: absolute; visibility: collapse;"><h1>Estructura</h1>
+        <p>AAAA esto ya es mucho relleno no? hay que ver otras cosas :(, pero bueno, la estructura de una pagina es muy simple, lleva las etiquetas basicas que vimos junto con las del oreden, mas o menos algo asi:</p>
+        <iframe src="https://peaceful-salamander-8425a7.netlify.app/media" width="2000px" height="1000px"></iframe>
+        </div>
+        <div id="cc14" style="position: absolute; visibility: collapse;"><h1>Los metadatos</h1>
+        <p>Estos son datos que le sirven al navegador, no son visibles dentro de la pagina y van en la parte de header, sirven para poner acentos, contar de que va nuestra pagina y pues dar información, por eso metaDatos, algunos ejemplos</p>
+        <p>meta charset="UTF-8"</p>
+        <p>meta name="description" content="Descripción de la página"</p>
+        <p>meta name="keywords" content="palabra clave1, palabra clave2"</p>
+        <p>meta name="author" content="Nombre del autor"</p>
+        <p>meta name="robots" content="index, follow"</p>
+        
+        </div>
+        <div id="cc15" style="position: absolute; visibility: collapse;"><h1>Otras</h1>
+        <p>No se que poner asi que voy a poner t4abajos del anterior semestre </p>
+
+        <div id="layout">
+            <div id="nube1">
+                <div id="nube11"></div>
+                <div id="nube12"></div>
+                <div id="nube13"></div>
+            </div>
+            <div id="nube2">
+                <div id="nube21"></div>
+                <div id="nube22"></div>
+                <div id="nube23"></div>
+            </div>
+            <div id="piso"></div>
+            <div id="arbol1">
+                <div id="copa"></div>
+                <div id="tallo"></div>
+            </div>
+            <div id="arbol2">
+                <div id="copa"></div>
+                <div id="tallo"></div>
+            </div>
+            <div id="casa">
+                <div id="puerta"></div>
+                <div id="ventana"></div>
+            </div>
+            <div id="techo"></div>
+            <div id="persona"></div>
+            <div id="cuerpo"></div>
+            <div id="pier"></div>
+            <div id="pier2"></div>
+            <div id="bra1"></div>
+            <div id="bra2"></div>
+            <div id="per5"></div>
+            <div id="per6"></div>
+        </div>
+    <img src="https://i.sstatic.net/REGSe.png" alt="">
+    <p>Etiqueta script, esta etiqueta sirve para añadir lenguaje js a nuestra pagina, ya sea desde un archivo con la propiedad src o escribiendo dentro de ella</p>
+        
+    </div>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation" id="barra">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel"  style="position: absolute; left: 0px; height: 1400px;">
+            <div class="offcanvas-header" >
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" id="volver"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <button id="c1">Antecendentes</button><br>
+                  <button id="c2">Etiqueta</button><br>
+                  <button id="c3">Texto</button><br>
+                  <button id="c4">Listas</button><br>
+                  <button id="c5">Tablas</button><br>
+                  <button id="c6">Imagen</button><br>
+                  <button id="c7">Video</button><br>
+                  <button id="c8">Audio</button><br>
+                  <button id="c9">Hipervinculos</button><br>
+                  <button id="c10">Formularios</button><br>
+                  <button id="c11">Semanticas</button><br>
+                  <button id="c12">Frames</button><br>
+                  <button id="c13">Estructura</button><br>
+                  <button id="c14">Meta datos</button><br>
+                  <button id="c15">Extras</button><br>
+                </li>
+              
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+     <script>
+        document.getElementById("barra").onclick=()=>{
+            document.getElementById("prin").style=" width: 100%; height: 96.1%; position: absolute; top: 50px; left: 400px;";
+            
+            }
+            document.getElementById("volver").onclick=()=>{
+            document.getElementById("prin").style=" width: 100%; height: 96.1%; position: absolute; top: 50px;"
+            
+            }
+            document.getElementById("c1").onclick=()=>{
+            document.getElementById("cc1").style="position: absolute; visibility: visible;"
+            document.getElementById("cc2").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc3").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc4").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc5").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc6").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc7").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc8").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc9").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc10").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc11").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc12").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc13").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc14").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc15").style=" position: absolute; visibility: collapse;"
+            
+            }
+            document.getElementById("c2").onclick=()=>{
+            document.getElementById("cc2").style=" position: absolute; visibility: visible;"
+            document.getElementById("cc1").style="position: absolute; visibility: collapse;"
+            document.getElementById("cc3").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc4").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc5").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc6").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc7").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc8").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc9").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc10").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc11").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc12").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc13").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc14").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc15").style=" position: absolute; visibility: collapse;"
+            
+            }
+            document.getElementById("c3").onclick=()=>{
+            document.getElementById("cc2").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc1").style="position: absolute; visibility: collapse;"
+            document.getElementById("cc3").style=" position: absolute; visibility: visible;"
+            document.getElementById("cc4").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc5").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc6").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc7").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc8").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc9").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc10").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc11").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc12").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc13").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc14").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc15").style=" position: absolute; visibility: collapse;"
+            }
+            document.getElementById("c4").onclick=()=>{
+            document.getElementById("cc2").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc1").style="position: absolute; visibility: collapse;"
+            document.getElementById("cc3").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc4").style=" position: absolute; visibility: visible;"
+            document.getElementById("cc5").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc6").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc7").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc8").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc9").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc10").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc11").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc12").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc13").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc14").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc15").style=" position: absolute; visibility: collapse;"
+            }
+            document.getElementById("c5").onclick=()=>{
+            document.getElementById("cc2").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc1").style="position: absolute; visibility: collapse;"
+            document.getElementById("cc3").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc4").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc5").style=" position: absolute; visibility: visible;"
+            document.getElementById("cc6").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc7").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc8").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc9").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc10").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc11").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc12").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc13").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc14").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc15").style=" position: absolute; visibility: collapse;"
+            }
+            document.getElementById("c6").onclick=()=>{
+            document.getElementById("cc2").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc1").style="position: absolute; visibility: collapse;"
+            document.getElementById("cc3").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc4").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc5").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc6").style=" position: absolute; visibility: visible;"
+            document.getElementById("cc7").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc8").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc9").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc10").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc11").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc12").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc13").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc14").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc15").style=" position: absolute; visibility: collapse;"
+            }
+            document.getElementById("c7").onclick=()=>{
+            document.getElementById("cc2").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc1").style="position: absolute; visibility: collapse;"
+            document.getElementById("cc3").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc4").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc5").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc6").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc7").style=" position: absolute; visibility: visible;"
+            document.getElementById("cc8").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc9").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc10").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc11").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc12").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc13").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc14").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc15").style=" position: absolute; visibility: collapse;"
+            }
+            document.getElementById("c8").onclick=()=>{
+            document.getElementById("cc2").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc1").style="position: absolute; visibility: collapse;"
+            document.getElementById("cc3").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc4").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc5").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc6").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc7").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc8").style=" position: absolute; visibility: visible;"
+            document.getElementById("cc9").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc10").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc11").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc12").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc13").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc14").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc15").style=" position: absolute; visibility: collapse;"
+            }
+            document.getElementById("c9").onclick=()=>{
+            document.getElementById("cc2").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc1").style="position: absolute; visibility: collapse;"
+            document.getElementById("cc3").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc4").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc5").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc6").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc7").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc8").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc9").style=" position: absolute; visibility: visible;"
+            document.getElementById("cc10").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc11").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc12").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc13").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc14").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc15").style=" position: absolute; visibility: collapse;"
+            }
+            document.getElementById("c10").onclick=()=>{
+            document.getElementById("cc2").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc1").style="position: absolute; visibility: collapse;"
+            document.getElementById("cc3").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc4").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc5").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc6").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc7").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc8").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc9").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc10").style=" position: absolute; visibility: visible;"
+            document.getElementById("cc11").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc12").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc13").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc14").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc15").style=" position: absolute; visibility: collapse;"
+            }
+            document.getElementById("c11").onclick=()=>{
+            document.getElementById("cc2").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc1").style="position: absolute; visibility: collapse;"
+            document.getElementById("cc3").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc4").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc5").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc6").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc7").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc8").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc9").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc10").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc11").style=" position: absolute; visibility: visible;"
+            document.getElementById("cc12").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc13").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc14").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc15").style=" position: absolute; visibility: collapse;"
+            }
+            document.getElementById("c12").onclick=()=>{
+            document.getElementById("cc2").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc1").style="position: absolute; visibility: collapse;"
+            document.getElementById("cc3").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc4").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc5").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc6").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc7").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc8").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc9").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc10").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc11").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc12").style=" position: absolute; visibility: visible;"
+            document.getElementById("cc13").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc14").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc15").style=" position: absolute; visibility: collapse;"
+            }
+            document.getElementById("c13").onclick=()=>{
+            document.getElementById("cc2").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc1").style="position: absolute; visibility: collapse;"
+            document.getElementById("cc3").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc4").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc5").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc6").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc7").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc8").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc9").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc10").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc11").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc12").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc13").style=" position: absolute; visibility: visible;"
+            document.getElementById("cc14").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc15").style=" position: absolute; visibility: collapse;"
+            }
+            document.getElementById("c14").onclick=()=>{
+            document.getElementById("cc2").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc1").style="position: absolute; visibility: collapse;"
+            document.getElementById("cc3").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc4").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc5").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc6").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc7").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc8").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc9").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc10").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc11").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc12").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc13").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc14").style=" position: absolute; visibility: visible;"
+            document.getElementById("cc15").style=" position: absolute; visibility: collapse;"
+            }
+            document.getElementById("c15").onclick=()=>{
+            document.getElementById("cc2").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc1").style="position: absolute; visibility: collapse;"
+            document.getElementById("cc3").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc4").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc5").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc6").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc7").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc8").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc9").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc10").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc11").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc12").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc13").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc14").style=" position: absolute; visibility: collapse;"
+            document.getElementById("cc15").style=" position: absolute; visibility: visible;"
+            }
+
+
+
+
+
+
+
+     </script>
+    
+</body>
+</html>
